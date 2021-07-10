@@ -1,0 +1,21 @@
+search-bar{
+  display: block;
+  max-width: 1200px;
+  margin: 2rem auto;
+  #formDataFilm{
+   // border: red solid 1px;
+    .form-element{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      input{
+        padding: 0.5rem;
+      }
+      #judul{
+        width: 500px;
+      }
+    }
+  }
+}
