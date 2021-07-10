@@ -1,0 +1,47 @@
+detail-movie{
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  z-index: 3;
+  width: 900px;
+  
+  .modal{
+   // border: red solid 2px;
+    padding: 10px;
+    .container{
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      img{
+        width: 500px;
+      }
+      .text-wrap{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        h3{
+          font-weight: 300;
+          color: rgb(19, 41, 58);
+        }
+        span{
+          color: rgb(10, 10, 10);
+          font-weight: 600;
+        }
+        .btn-close{
+          padding: 0.8rem 2.4rem;
+          align-self: flex-end;
+          border: none;
+          background: rgb(247, 130, 5);
+          font-weight: 600;
+          text-transform: capitalize;
+          border-radius: 5px;
+          color: #fff;
+        }
+      }
+    
+    }
+  }
+}
