@@ -172,12 +172,6 @@ detail-movie .modal .container .text-wrap .btn-close {
   cursor: pointer;
 }
 
-.hero {
-  width: 100%;
-  height: 500px;
-  background: url("");
-}
-
 .shadow {
   display: none;
   position: absolute;
