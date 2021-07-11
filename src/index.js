@@ -1,3 +1,8 @@
+import './component/header.js';
+import './component/search-bar.js';
+import './component/movieList.js';
+import './component/detail-movie.js';
+
 
 class MovieApp {
 

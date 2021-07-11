@@ -1,3 +1,4 @@
+import './component/movie-item.js';
 class MovieList extends HTMLElement{
 
   set dataMovie(data){
