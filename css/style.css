@@ -117,6 +117,7 @@ detail-movie .modal .container .text-wrap .btn-close {
   text-transform: capitalize;
   border-radius: 5px;
   color: #fff;
+  cursor: pointer;
 }
 
 search-bar {
@@ -145,6 +146,10 @@ search-bar #formDataFilm .form-element input {
 
 search-bar #formDataFilm .form-element #judul {
   width: 500px;
+}
+
+search-bar #formDataFilm .form-element .cari-btn {
+  cursor: pointer;
 }
 
 .shadow {
