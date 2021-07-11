@@ -1,11 +1,23 @@
 app-header{
   display: block;
-  background: rgb(7, 10, 102);
+  background: rgb(19, 19, 19);
+
+  //border: red solid 1px;
   .container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 80px;
     color: #fff;
+    max-width: 1200px;
+    margin: auto;
+    .menus{
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      a{
+        color: #fff;
+      }
+    }
   }
 }

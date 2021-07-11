@@ -35,7 +35,6 @@ class MovieApp {
   }
 
   renderCardMovie(data){
-    data.length = 8;
     this.movieList.dataMovie = data;
     
   }

@@ -15,13 +15,17 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   position: relative;
 }
 
 app-header {
   display: block;
-  background: #070a66;
+  background: #131313;
 }
 
 app-header .container {
@@ -31,11 +35,59 @@ app-header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+  color: #fff;
+  max-width: 1200px;
+  margin: auto;
+}
+
+app-header .container .menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+app-header .container .menus a {
+  color: #fff;
+}
+
+search-bar {
+  display: block;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+search-bar #formDataFilm .form-element {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 80px;
-  color: #fff;
+  gap: 1rem;
+}
+
+search-bar #formDataFilm .form-element input {
+  padding: 0.5rem;
+}
+
+search-bar #formDataFilm .form-element #judul {
+  width: 500px;
+}
+
+search-bar #formDataFilm .form-element .cari-btn {
+  cursor: pointer;
 }
 
 movie-list {
@@ -43,9 +95,9 @@ movie-list {
   margin: 2rem auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 movie-item {
@@ -53,7 +105,7 @@ movie-item {
 }
 
 movie-item .card {
-  border: red solid 1px;
+  color: #fff;
 }
 
 detail-movie {
@@ -120,36 +172,10 @@ detail-movie .modal .container .text-wrap .btn-close {
   cursor: pointer;
 }
 
-search-bar {
-  display: block;
-  max-width: 1200px;
-  margin: 2rem auto;
-}
-
-search-bar #formDataFilm .form-element {
+.hero {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 1rem;
-}
-
-search-bar #formDataFilm .form-element input {
-  padding: 0.5rem;
-}
-
-search-bar #formDataFilm .form-element #judul {
-  width: 500px;
-}
-
-search-bar #formDataFilm .form-element .cari-btn {
-  cursor: pointer;
+  height: 500px;
+  background: url("");
 }
 
 .shadow {
