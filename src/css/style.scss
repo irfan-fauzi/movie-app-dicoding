@@ -19,7 +19,7 @@ a{
 
 body{
   position: relative;
-  //background: rgb(19, 19, 19);
+  background: rgb(19, 19, 19);
 }
 
 @import '_header';
@@ -29,7 +29,9 @@ body{
 @import '_detail-movie';
 
 
-
+// .hero{
+ 
+// }
 .shadow{
   display: none;
   position: absolute;
