@@ -10,6 +10,8 @@ class MovieItem extends HTMLElement{
    
   }
 
+  
+
   render(){
     const {Poster, Title, Year} = this._dataMovie;
     this.innerHTML = `

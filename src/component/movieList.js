@@ -10,6 +10,13 @@ class MovieList extends HTMLElement{
     this._eventDetail = event;
   }
 
+  set renderError(message){
+    this._message = message
+    this.innerHTML = `
+    <h2 class="placeholder">${this._message}</h2>
+    `;
+  }
+
   render(){
     this.innerHTML = ``;
     this._dataMovie.forEach(data => {

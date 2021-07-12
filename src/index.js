@@ -18,13 +18,26 @@ class MovieApp {
   fetchDataFirstPage(){
     fetch(`${this.baseUrl}s=marvel`)
     .then(res => res.json())
-    .then(res => this.renderCardMovie(res.Search));
+    .then(res => this.renderCardMovie(res.Search))
+    .catch(error => error)
   }
 
   fetchFilterMovie(keyword){
     fetch(`${this.baseUrl}s=${keyword}`)
     .then(res => res.json())
-    .then(res => this.renderCardMovie(res.Search));
+    .then(res => {
+      if(keyword === ""){
+        this.fallbackResult("keyword kosong")
+      }
+      else if(res.Response === "False"){
+        this.fallbackResult(`${keyword} tidak ditemukan`)
+      }
+      else {
+        this.renderCardMovie(res.Search)
+      }
+    })
+    .catch(error => error)
+    
   }
   
 
@@ -37,6 +50,10 @@ class MovieApp {
   renderCardMovie(data){
     this.movieList.dataMovie = data;
     
+  }
+
+  fallbackResult(message){
+    this.movieList.renderError = message;
   }
 
   renderDetailMovie(data){
