@@ -16,7 +16,9 @@ class MovieItem extends HTMLElement{
     const {Poster, Title, Year} = this._dataMovie;
     this.innerHTML = `
     <div class="card">
-      <img src=${Poster} class="card-img" alt="">
+      <div class="img-wrap">
+        <img src=${Poster} class="card-img" alt="">
+      </div>  
       <div class="card-body">
         <h5 class="card-title">${Title}</h5>
         <h6 class="card-year">${Year}</h6>

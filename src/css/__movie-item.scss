@@ -5,5 +5,39 @@ movie-item{
   // }
   .card{
     color: #fff;
+    border: rgb(44, 44, 44) solid 1px;
+    text-align: center;
+    padding: 10px;
+    .img-wrap{
+      height: 330px;
+     // border: rgb(160, 157, 157) solid 1px;
+      overflow: hidden;
+      background: rgb(2, 2, 2);
+      display: flex;
+      align-items: center;
+     
+    }
+    .card-body{
+      color: rgb(151, 150, 150);
+      .card-title{
+        font-weight: 400;
+        margin-top: 10px;
+      }
+      .card-year{
+        font-size: 1rem;
+        font-weight: 200;
+        margin: 7px 0;
+      }
+      .btn-detail{
+        background: transparent;
+        border: none;
+        border: rgb(99, 99, 99) solid 1px;
+        color: rgb(151, 150, 150);
+        padding: 0.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+   
   }
 }

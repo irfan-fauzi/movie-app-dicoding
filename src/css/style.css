@@ -176,6 +176,46 @@ movie-item {
 
 movie-item .card {
   color: #fff;
+  border: #2c2c2c solid 1px;
+  text-align: center;
+  padding: 10px;
+}
+
+movie-item .card .img-wrap {
+  height: 330px;
+  overflow: hidden;
+  background: #020202;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+movie-item .card .card-body {
+  color: #979696;
+}
+
+movie-item .card .card-body .card-title {
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+movie-item .card .card-body .card-year {
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 7px 0;
+}
+
+movie-item .card .card-body .btn-detail {
+  background: transparent;
+  border: none;
+  border: #636363 solid 1px;
+  color: #979696;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 detail-movie {
@@ -287,7 +327,7 @@ hero-app .hero .text-wrap h3 {
 hero-app .hero .text-wrap .btn-hero {
   background: red;
   border: none;
-  padding: 0.9rem 2.5rem;
+  padding: 0.9rem 2.3rem;
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
