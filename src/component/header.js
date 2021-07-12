@@ -10,11 +10,9 @@ class Header extends HTMLElement{
     <div class="container">
       <img src="https://raw.githubusercontent.com/irfan-fauzi/movie-app-dicoding/main/src/img/logo.png" alt="logo" class="logo">
       <ul class="menus">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Schedules</a></li>
-        <li><a href="#">Movies</a></li>
-        <li><a href="#">News</a></li>
-        <button class="btn-login">Login</button>
+        <li><a href="#" class="home">Home</a></li>
+        <li><a href="#" class="movie">Movies</a></li>
+        <button class="btn-login">Login </button>
       </ul>
     </div>
     `;

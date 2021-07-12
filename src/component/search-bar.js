@@ -17,7 +17,8 @@ class SearchBar extends HTMLElement{
     <form id="formDataFilm">
       <div class="form-element">
           <input type="text" id="judul" name="judul" placeholder="cari judul film .." required>
-          <input type="submit" value="cari film" class="cari-btn">
+         
+          <button class="cari-btn"><i class="fas fa-search"></i></button>
       </div>
     </form>
     

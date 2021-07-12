@@ -12,13 +12,36 @@ search-bar{
       gap: 1rem;
       input{
         padding: 0.5rem;
+        
       }
       #judul{
-        width: 500px;
+        width: 400px;
+        color: blanchedalmond;
+        background: transparent;
+        border: none;
+        border: rgba(238, 238, 238, 0.33) solid 1px;
+        border-radius: 20px;
+        padding: 0.7rem 2rem;
       }
       .cari-btn{
         cursor: pointer;
+        padding: 0.7rem 0.8rem;
+        color: rgb(170, 170, 170);
+        background: none;
+        border: rgba(238, 238, 238, 0.33) solid 1px;
+        font-size: 1rem;
+        border-radius: 20px;
+        transition: 0.3s;
+        &:hover{
+         background: rgba(225, 225, 225, 0.775);
+         color: black;
+        }
       }
     }
+  }
+}
+@media only screen and (max-width: 768px){
+  search-bar{
+    padding: 0 1rem;
   }
 }

@@ -40,3 +40,22 @@ app-header{
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  app-header{
+    .container{
+      padding: 0 1rem;
+      .logo{
+        width: 110px;
+      }
+      .btn-login{
+        padding: 0.5rem;
+      }
+      .menus{
+        .movie, .home{
+          display: none;
+        }
+      }
+    }
+  }
+}

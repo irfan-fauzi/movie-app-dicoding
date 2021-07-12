@@ -82,6 +82,21 @@ app-header .container .menus .btn-login {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+  app-header .container {
+    padding: 0 1rem;
+  }
+  app-header .container .logo {
+    width: 110px;
+  }
+  app-header .container .btn-login {
+    padding: 0.5rem;
+  }
+  app-header .container .menus .movie, app-header .container .menus .home {
+    display: none;
+  }
+}
+
 search-bar {
   display: block;
   max-width: 1200px;
@@ -107,11 +122,36 @@ search-bar #formDataFilm .form-element input {
 }
 
 search-bar #formDataFilm .form-element #judul {
-  width: 500px;
+  width: 400px;
+  color: blanchedalmond;
+  background: transparent;
+  border: none;
+  border: rgba(238, 238, 238, 0.33) solid 1px;
+  border-radius: 20px;
+  padding: 0.7rem 2rem;
 }
 
 search-bar #formDataFilm .form-element .cari-btn {
   cursor: pointer;
+  padding: 0.7rem 0.8rem;
+  color: #aaaaaa;
+  background: none;
+  border: rgba(238, 238, 238, 0.33) solid 1px;
+  font-size: 1rem;
+  border-radius: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+search-bar #formDataFilm .form-element .cari-btn:hover {
+  background: rgba(225, 225, 225, 0.775);
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  search-bar {
+    padding: 0 1rem;
+  }
 }
 
 movie-list {
@@ -122,6 +162,12 @@ movie-list {
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  movie-list {
+    padding: 0 1rem;
+  }
 }
 
 movie-item {
@@ -256,6 +302,28 @@ hero-app .hero::before {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  hero-app .hero {
+    height: 450px;
+    background-position: right;
+  }
+  hero-app .hero::before {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  hero-app .hero .text-wrap {
+    padding: 0;
+    text-align: center;
+  }
+  hero-app .hero .text-wrap .btn-hero {
+    padding: 0.8rem 1.4rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  hero-app .hero .text-wrap h2 {
+    font-size: 1.6rem;
+  }
 }
 
 .shadow {

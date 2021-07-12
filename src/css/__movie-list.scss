@@ -6,3 +6,9 @@ movie-list{
   gap: 20px;
   //border: yellow solid 2px;
 }
+
+@media only screen and (max-width: 768px){
+  movie-list{
+    padding: 0 1rem;
+  }
+}
