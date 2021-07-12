@@ -6,16 +6,35 @@ app-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
-    color: #fff;
+    height: 90px;
+   // color: rgb(179, 172, 172);
     max-width: 1200px;
     margin: auto;
+    .logo{
+      width: 150px;
+    }
     .menus{
       display: flex;
       align-items: center;
       gap: 2rem;
       a{
+        color: rgb(153, 148, 148);
+        transition: 0.3s;
+        &:hover{
+          color: red;
+        }
+      }
+      .btn-login{
+        background: red;
+        border: none;
+        padding: 0.8rem 1.6rem;
         color: #fff;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        cursor: pointer;
       }
     }
   }

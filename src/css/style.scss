@@ -27,32 +27,6 @@ body{
 @import '_movie-list';
 @import '_movie-item';
 @import '_detail-movie';
+@import '_hero';
+@import '_shadow';
 
-
-.hero{
-  background: url('https://raw.githubusercontent.com/irfan-fauzi/movie-app-dicoding/main/src/img/loki-g.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 550px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
- &::before{
-   content: "";
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   background: rgba(0,0,0,0.50);
-   box-shadow: inset 100px 100px 250px #000000,inset -100px -100px 250px #000000 ;
- }
-}
-.shadow{
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgb(0, 0, 0);
-  top: 0;
-  left: 0;
-  opacity: 0.8;
-}

@@ -5,7 +5,7 @@ class Header extends HTMLElement{
   render(){
     this.innerHTML = `
     <div class="container">
-      <h2>Irfan cinema</h2>
+      <img src="https://raw.githubusercontent.com/irfan-fauzi/movie-app-dicoding/main/src/img/logo.png" alt="logo" class="logo">
       <ul class="menus">
         <li><a href="#">Home</a></li>
         <li><a href="#">Schedules</a></li>
