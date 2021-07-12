@@ -10,6 +10,7 @@ class MovieApp {
 
   constructor(){
     this.movieList = document.querySelector('movie-list');
+    this.headerElement = document.querySelector('app-header');
     this.baseUrl = 'http://www.omdbapi.com/?apikey=eac2e9a2&';
     this.shadowElement = document.querySelector('.shadow');
     this.searchElement = document.querySelector('search-bar');
@@ -49,7 +50,6 @@ class MovieApp {
 
   renderCardMovie(data){
     this.movieList.dataMovie = data;
-    
   }
 
   fallbackResult(message){
@@ -68,6 +68,7 @@ class MovieApp {
 
 const movieApp = new MovieApp();
 movieApp.fetchDataFirstPage();
+
 movieApp.movieList.eventDetail = function(){
   const idMovie = this._dataMovie.imdbID;
   movieApp.fetchDetailMovie(idMovie)
@@ -77,4 +78,8 @@ movieApp.searchElement.eventSubmit = function(e){
   const keyword = this.valueJudul;
   movieApp.fetchFilterMovie(keyword)
   e.preventDefault()
+}
+
+movieApp.headerElement.eventHome = function(){
+  movieApp.fetchDataFirstPage();
 }

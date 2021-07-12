@@ -46,6 +46,7 @@ app-header .container {
 
 app-header .container .logo {
   width: 140px;
+  cursor: pointer;
 }
 
 app-header .container .menus {
@@ -262,5 +263,10 @@ detail-movie .modal .container .text-wrap .btn-close {
   top: 0;
   left: 0;
   opacity: 0.8;
+}
+
+.placeholder {
+  color: #fff;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

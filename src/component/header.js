@@ -2,6 +2,9 @@ class Header extends HTMLElement{
   connectedCallback(){
     this.render()
   }
+  set eventHome(event){
+    this._eventHome = event;
+  }
   render(){
     this.innerHTML = `
     <div class="container">
@@ -15,6 +18,9 @@ class Header extends HTMLElement{
       </ul>
     </div>
     `;
+    this.querySelector('.logo').addEventListener('click', () => {
+      this._eventHome();
+    })
   }
 }
 
