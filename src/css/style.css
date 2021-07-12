@@ -196,7 +196,11 @@ detail-movie .modal .container .text-wrap .btn-close {
   cursor: pointer;
 }
 
-.hero {
+hero-app {
+  display: block;
+}
+
+hero-app .hero {
   background: url("https://raw.githubusercontent.com/irfan-fauzi/movie-app-dicoding/main/src/img/loki-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -212,7 +216,7 @@ detail-movie .modal .container .text-wrap .btn-close {
           justify-content: space-between;
 }
 
-.hero .text-wrap {
+hero-app .hero .text-wrap {
   position: relative;
   z-index: 4;
   color: #b8b7b7;
@@ -221,20 +225,20 @@ detail-movie .modal .container .text-wrap .btn-close {
   padding-right: 30rem;
 }
 
-.hero .text-wrap h2 {
+hero-app .hero .text-wrap h2 {
   font-size: 3rem;
   font-weight: 800;
   text-transform: capitalize;
   text-shadow: 0 3px 0 rgba(0, 0, 0, 0.8);
 }
 
-.hero .text-wrap h3 {
+hero-app .hero .text-wrap h3 {
   margin: 1rem 0;
   text-transform: capitalize;
   font-weight: 200;
 }
 
-.hero .text-wrap .btn-hero {
+hero-app .hero .text-wrap .btn-hero {
   background: red;
   border: none;
   padding: 0.9rem 2.5rem;
@@ -246,7 +250,7 @@ detail-movie .modal .container .text-wrap .btn-close {
   cursor: pointer;
 }
 
-.hero::before {
+hero-app .hero::before {
   content: "";
   position: absolute;
   width: 100%;

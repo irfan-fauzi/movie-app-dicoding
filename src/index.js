@@ -1,4 +1,5 @@
 import './component/header.js';
+import './component/hero-app.js';
 import './component/search-bar.js';
 import './component/movieList.js';
 import './component/detail-movie.js';
@@ -59,7 +60,6 @@ class MovieApp {
   renderDetailMovie(data){
     const detailMovieElement = document.createElement('detail-movie');
     detailMovieElement.dataMovie = data;
-    console.log(data)
     document.body.appendChild(detailMovieElement);
     this.shadowElement.style.display = "block";
   }
