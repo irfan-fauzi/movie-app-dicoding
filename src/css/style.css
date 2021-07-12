@@ -45,7 +45,7 @@ app-header .container {
 }
 
 app-header .container .logo {
-  width: 150px;
+  width: 140px;
 }
 
 app-header .container .menus {
@@ -196,7 +196,7 @@ detail-movie .modal .container .text-wrap .btn-close {
 }
 
 .hero {
-  background: url("https://raw.githubusercontent.com/irfan-fauzi/movie-app-dicoding/main/src/img/loki-g.jpg");
+  background: url("https://raw.githubusercontent.com/irfan-fauzi/movie-app-dicoding/main/src/img/loki-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 550px;
@@ -206,39 +206,43 @@ detail-movie .modal .container .text-wrap .btn-close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero .text-wrap {
-  margin-top: 8rem;
   position: relative;
   z-index: 4;
-  color: #fff;
-  text-align: center;
-  padding: 0 15rem;
+  color: #b8b7b7;
+  max-width: 1200px;
+  margin: 7rem auto 0 auto;
+  padding-right: 30rem;
 }
 
 .hero .text-wrap h2 {
   font-size: 3rem;
+  font-weight: 800;
   text-transform: capitalize;
   text-shadow: 0 3px 0 rgba(0, 0, 0, 0.8);
 }
 
 .hero .text-wrap h3 {
-  margin: 1rem;
+  margin: 1rem 0;
+  text-transform: capitalize;
+  font-weight: 200;
 }
 
 .hero .text-wrap .btn-hero {
   background: red;
   border: none;
-  padding: 0.9rem 3rem;
+  padding: 0.9rem 2.5rem;
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: capitalize;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .hero::before {
@@ -247,8 +251,6 @@ detail-movie .modal .container .text-wrap .btn-close {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: inset 100px 100px 250px #000000,inset -100px -100px 250px #000000;
-          box-shadow: inset 100px 100px 250px #000000,inset -100px -100px 250px #000000;
 }
 
 .shadow {
