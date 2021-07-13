@@ -273,6 +273,10 @@ detail-movie .modal .container .text-wrap {
   gap: 5px;
 }
 
+detail-movie .modal .container .text-wrap .fas {
+  color: gold;
+}
+
 detail-movie .modal .container .text-wrap h3 {
   font-weight: 300;
   color: #13293a;
