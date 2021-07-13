@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;800&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
 
-ul{
+ul {
   list-style: none
 }
-img{
+
+img {
   width: 100%;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
-body{
+body {
   position: relative;
   background: rgb(19, 19, 19);
 }
@@ -30,8 +32,25 @@ body{
 @import '_hero';
 @import '_shadow';
 
+footer {
+  //border-top: rgb(123, 122, 122) solid 1px;
+  background: rgb(0, 0, 0);
 
-.placeholder{
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      width: 100px;
+    }
+  }
+}
+
+.placeholder {
   color: #fff;
   text-align: center;
 }

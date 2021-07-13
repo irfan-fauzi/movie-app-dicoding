@@ -26,9 +26,11 @@ detail-movie {
         display: flex;
         flex-direction: column;
         gap: 5px;
+
         .fas {
           color: gold;
         }
+
         h3 {
           font-weight: 300;
           color: rgb(19, 41, 58);
@@ -65,6 +67,9 @@ detail-movie {
     background: black;
 
     .modal {
+      outline: rgb(143, 140, 140) solid 1px;
+      width: 90%;
+      margin: auto;
 
       .container {
         flex-direction: column;
@@ -92,21 +97,23 @@ detail-movie {
         .text-wrap {
           position: relative;
           z-index: 5;
-        
+
           span {
             color: #fff;
           }
 
           h3 {
             font-size: 0.9rem;
+            font-weight: 400;
             color: #fff;
+            border: none;
           }
 
           .btn-close {
             padding: 0.5rem 1rem;
           }
 
-          
+
         }
       }
     }

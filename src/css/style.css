@@ -307,6 +307,11 @@ detail-movie .modal .container .text-wrap .btn-close {
     width: 100%;
     background: black;
   }
+  detail-movie .modal {
+    outline: #8f8c8c solid 1px;
+    width: 90%;
+    margin: auto;
+  }
   detail-movie .modal .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -338,7 +343,9 @@ detail-movie .modal .container .text-wrap .btn-close {
   }
   detail-movie .modal .container .text-wrap h3 {
     font-size: 0.9rem;
+    font-weight: 400;
     color: #fff;
+    border: none;
   }
   detail-movie .modal .container .text-wrap .btn-close {
     padding: 0.5rem 1rem;
@@ -438,6 +445,29 @@ hero-app .hero::before {
   top: 0;
   left: 0;
   opacity: 0.8;
+}
+
+footer {
+  background: black;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: auto;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container .logo {
+  width: 100px;
 }
 
 .placeholder {
