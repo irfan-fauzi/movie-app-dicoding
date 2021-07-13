@@ -10,7 +10,7 @@ class HeroApp extends HTMLElement{
       <div class="text-wrap">
         <h2>film, acara tv tak terbatas dan lebih banyak lagi</h2>
         <h3>nonton dimana saja dan kapan saja</h3>
-        <button class="btn-hero">Pilih Film <i class="far fa-play-circle"></i></button>
+        <button class="btn-hero"><a href="#movie-list">Pilih Film <i class="far fa-play-circle"></i></a></button>
       </div>
     </div>
     `;

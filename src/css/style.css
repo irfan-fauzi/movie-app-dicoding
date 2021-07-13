@@ -5,6 +5,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -402,13 +403,17 @@ hero-app .hero .text-wrap h3 {
 hero-app .hero .text-wrap .btn-hero {
   background: red;
   border: none;
-  padding: 0.9rem 2.3rem;
   font-size: 1rem;
   font-weight: 600;
-  color: #fff;
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
+}
+
+hero-app .hero .text-wrap .btn-hero a {
+  display: block;
+  padding: 0.9rem 2.3rem;
+  color: #d5d0d0;
 }
 
 hero-app .hero::before {
@@ -432,9 +437,11 @@ hero-app .hero::before {
     text-align: center;
   }
   hero-app .hero .text-wrap .btn-hero {
-    padding: 0.8rem 1.4rem;
     font-size: 0.8rem;
     font-weight: 400;
+  }
+  hero-app .hero .text-wrap .btn-hero a {
+    padding: 0.7rem 1rem;
   }
   hero-app .hero .text-wrap h2 {
     font-size: 1.6rem;
