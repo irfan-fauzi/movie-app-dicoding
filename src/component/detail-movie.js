@@ -6,18 +6,19 @@ class DetailMovie extends HTMLElement{
   }
 
   render(){
-    const {Poster, Title, Year, Plot, Country, Actors, imdbRating, Awards} = this._dataMovie;
+    const {Poster, Title, Year, Plot, Country, Actors, imdbRating} = this._dataMovie;
     this.innerHTML = `
     <div class="modal">
       <div class="container">
-        <img src=${Poster} alt="">
+       
+          <img src=${Poster} alt="">
+        
         <div class="text-wrap">
-          <h3 class="title"><span>Judul :</span> <br> ${Title}</h3>
-          <h3 class="year"><span>Tahun :</span><br>${Year}</h3>
-          <h3 class="plot"><span>Plot :</span><br>${Plot}</h3>
-          <h3 class="countrey"><span>Negara :</span> <br> ${Country}</h3>
-          <h3 class="actors"><span>Aktor :</span><br>${Actors}</h3>
-         
+          <h3 class="title"><span>Judul Film :</span> <br> ${Title}</h3>
+          <h3 class="year"><span>Tahun Rilis:</span><br>${Year}</h3>
+          <h3 class="plot"><span>Plot Cerita:</span><br>${Plot}</h3>
+          <h3 class="countrey"><span>Negara asal:</span> <br> ${Country}</h3>
+          <h3 class="actors"><span>Aktor / aktris :</span><br>${Actors}</h3>
           <h3 class="rating"><span>Rating imdb :</span><br>${imdbRating}</h3>
           <button class="btn-close">tutup</button>
         </div>

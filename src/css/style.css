@@ -225,9 +225,9 @@ detail-movie {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: #fff;
-  z-index: 3;
   width: 900px;
+  background: #eeeded;
+  z-index: 3;
 }
 
 detail-movie .modal {
@@ -239,13 +239,13 @@ detail-movie .modal .container {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 detail-movie .modal .container img {
-  width: 500px;
+  width: 400px;
 }
 
 detail-movie .modal .container .text-wrap {
@@ -262,6 +262,8 @@ detail-movie .modal .container .text-wrap {
 detail-movie .modal .container .text-wrap h3 {
   font-weight: 300;
   color: #13293a;
+  border: #a9a8a8 solid 1px;
+  padding: 5px;
 }
 
 detail-movie .modal .container .text-wrap span {
@@ -270,7 +272,7 @@ detail-movie .modal .container .text-wrap span {
 }
 
 detail-movie .modal .container .text-wrap .btn-close {
-  padding: 0.8rem 2.4rem;
+  padding: 0.5rem 2rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
   border: none;
