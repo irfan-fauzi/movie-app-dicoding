@@ -451,7 +451,11 @@ footer {
   background: black;
 }
 
-footer .container {
+footer app-footer {
+  display: block;
+}
+
+footer app-footer .container {
   max-width: 1200px;
   margin: auto;
   height: 100px;
@@ -466,7 +470,7 @@ footer .container {
           align-items: center;
 }
 
-footer .container .logo {
+footer app-footer .container .logo {
   width: 100px;
 }
 

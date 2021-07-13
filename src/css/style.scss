@@ -33,21 +33,26 @@ body {
 @import '_shadow';
 
 footer {
-  //border-top: rgb(123, 122, 122) solid 1px;
   background: rgb(0, 0, 0);
+  app-footer {
+    display: block;
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-  .container {
-    max-width: 1200px;
-    margin: auto;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .logo {
-      width: 100px;
+      .logo {
+        width: 100px;
+      }
     }
   }
+
+  //border-top: rgb(123, 122, 122) solid 1px;
+
+
 }
 
 .placeholder {

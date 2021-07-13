@@ -3,6 +3,7 @@ import './component/hero-app.js';
 import './component/search-bar.js';
 import './component/movieList.js';
 import './component/detail-movie.js';
+import './component/footer.js';
 import './css/style.css';
 import 'regenerator-runtime';
 
