@@ -10,9 +10,7 @@ class DetailMovie extends HTMLElement{
     this.innerHTML = `
     <div class="modal">
       <div class="container">
-       
-          <img src=${Poster} alt="">
-        
+        <img src=${Poster} alt="poster">
         <div class="text-wrap">
           <h3 class="title"><span>Judul Film :</span> <br> ${Title}</h3>
           <h3 class="year"><span>Tahun Rilis:</span><br>${Year}</h3>

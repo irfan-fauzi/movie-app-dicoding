@@ -1,43 +1,66 @@
-movie-item{
+movie-item {
   display: block;
+
   // .card{
   //   border: red solid 1px;
   // }
-  .card{
+  .card {
     color: #fff;
     border: rgb(44, 44, 44) solid 1px;
     text-align: center;
     padding: 10px;
-    .img-wrap{
+
+    .img-wrap {
       height: 330px;
-     // border: rgb(160, 157, 157) solid 1px;
+      // border: rgb(160, 157, 157) solid 1px;
       overflow: hidden;
       background: rgb(2, 2, 2);
       display: flex;
       align-items: center;
-     
+
     }
-    .card-body{
+
+    .card-body {
       color: rgb(151, 150, 150);
-      .card-title{
+
+      .card-title {
         font-weight: 400;
         margin-top: 10px;
+        color: #fff;
       }
-      .card-year{
+
+      .card-year {
         font-size: 1rem;
         font-weight: 200;
         margin: 7px 0;
       }
-      .btn-detail{
+
+      .btn-detail {
         background: transparent;
         border: none;
         border: rgb(99, 99, 99) solid 1px;
         color: rgb(151, 150, 150);
-        padding: 0.5rem;
-        border-radius: 10px;
+        padding: 0.5rem 0.8rem;
+        border-radius: 3px;
         cursor: pointer;
       }
     }
-   
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  movie-item {
+    .card {
+      .img-wrap {
+        height: 100%;
+        justify-content: center;
+        background: transparent;
+
+        img {
+          width: 250px;
+
+        }
+      }
+    }
   }
 }

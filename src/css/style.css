@@ -200,6 +200,7 @@ movie-item .card .card-body {
 movie-item .card .card-body .card-title {
   font-weight: 400;
   margin-top: 10px;
+  color: #fff;
 }
 
 movie-item .card .card-body .card-year {
@@ -213,9 +214,22 @@ movie-item .card .card-body .btn-detail {
   border: none;
   border: #636363 solid 1px;
   color: #979696;
-  padding: 0.5rem;
-  border-radius: 10px;
+  padding: 0.5rem 0.8rem;
+  border-radius: 3px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  movie-item .card .img-wrap {
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: transparent;
+  }
+  movie-item .card .img-wrap img {
+    width: 250px;
+  }
 }
 
 detail-movie {
@@ -282,6 +296,49 @@ detail-movie .modal .container .text-wrap .btn-close {
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  detail-movie {
+    width: 100%;
+    background: black;
+  }
+  detail-movie .modal .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+  detail-movie .modal .container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    top: 0;
+    opacity: 0.8;
+  }
+  detail-movie .modal .container img {
+    position: absolute;
+    width: 350px;
+    z-index: -1;
+  }
+  detail-movie .modal .container .text-wrap {
+    position: relative;
+    z-index: 5;
+  }
+  detail-movie .modal .container .text-wrap span {
+    color: #fff;
+  }
+  detail-movie .modal .container .text-wrap h3 {
+    font-size: 0.9rem;
+    color: #fff;
+  }
+  detail-movie .modal .container .text-wrap .btn-close {
+    padding: 0.5rem 1rem;
+  }
 }
 
 hero-app {
