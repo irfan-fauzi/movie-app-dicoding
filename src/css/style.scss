@@ -1,29 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;800&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
-}
-
-ul {
-  list-style: none
-}
-
-img {
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  position: relative;
-  background: rgb(19, 19, 19);
-}
-
+@import '_base';
 @import '_header';
 @import '_search-bar';
 @import '_movie-list';
@@ -31,31 +6,4 @@ body {
 @import '_detail-movie';
 @import '_hero';
 @import '_shadow';
-
-footer {
-  background: rgb(0, 0, 0);
-  app-footer {
-    display: block;
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      height: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .logo {
-        width: 100px;
-      }
-    }
-  }
-
-  //border-top: rgb(123, 122, 122) solid 1px;
-
-
-}
-
-.placeholder {
-  color: #fff;
-  text-align: center;
-}
+@import '_footer';

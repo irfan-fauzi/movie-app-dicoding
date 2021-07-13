@@ -24,6 +24,11 @@ body {
   background: #131313;
 }
 
+.placeholder {
+  color: #fff;
+  text-align: center;
+}
+
 app-header {
   display: block;
   background: black;
@@ -472,10 +477,5 @@ footer app-footer .container {
 
 footer app-footer .container .logo {
   width: 100px;
-}
-
-.placeholder {
-  color: #fff;
-  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
